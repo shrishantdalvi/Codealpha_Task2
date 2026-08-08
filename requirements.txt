@@ -1,0 +1,18 @@
+Libraries used to build whole project:
+Pandas
+matplotlib
+seaborn
+scikit-learn
+joblib
+numpy
+
+modules from and there required functions scikit-learn:
+
+train_test_split(function) from  sklearn.model_selection(module)
+
+
+LinearRegression(function) from  sklearn.linear_model (module)
+
+
+mean_absolute_error,mean_squared_error,r2_score(function)   from  sklearn.metrics(module)
+

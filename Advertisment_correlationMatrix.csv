@@ -1,0 +1,5 @@
+variable,TV,Radio,Newspaper,Sales
+TV,1.0,0.055,0.057,0.782
+Radio,0.055,1.0,0.354,0.576
+Newspaper,0.057,0.354,1.0,0.228
+Sales,0.782,0.576,0.228,1.0

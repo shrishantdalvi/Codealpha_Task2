@@ -72,3 +72,6 @@ The provided dataset includes only advertising expenditure and sales information
 * Scikit-learn
 * VS Code
 * Git & GitHub
+
+## Dashboard preview
+![Advertisement_sales_Dashboard](output/Advertisement_dashboard.png)

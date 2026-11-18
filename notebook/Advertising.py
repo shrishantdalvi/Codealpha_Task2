@@ -36,10 +36,13 @@ print(df.isnull().sum())
 print(df.duplicated().sum()) 
 #checking any negative values
 print((df[["TV","Radio","Newspaper"]] < 0).sum())
+#save cleaned data into csv
+df.to_csv("Advertising.csv", index="False")
+print("successfully cleaned csv is saved")
 
 #Exploratory data analysis
 #Histogram of TV  records distribution
-plt.hist(df["TV"],bins=12,
+"""plt.hist(df["TV"],bins=12,
          color="#4C78A8",
          edgecolor="#263238",
          linewidth=1.2)
@@ -173,7 +176,7 @@ plt.grid(axis="y",
          linewidth=0.7,
          alpha=0.35)
 plt.tight_layout()
-plt.show()  
+plt.show()"""
 
 #Machine learning 
 df.drop(columns=["Unnamed: 0"],inplace=True)
@@ -288,4 +291,4 @@ print(new_data)  #print the new data with predicted sales
 #saved the trained data
 joblib.dump(model,"Sales_prediction_model.pkl")
 #load the model 
-loaded_model = joblib.load("Sales_prediction_model.pkl")
+loaded_model = joblib.load("Sales_prediction_model.pkl") 
